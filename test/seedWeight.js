@@ -5,10 +5,7 @@ var convert = require('../lib')
   , percentError = require('../lib/percentError');
 
 tests['TKW to Seeds/lb'] = function () {
-  var expected = 1500
-      , actual = convert(302.39).from('TKW').to('Seeds/lb');
-  assert.ok( percentError(expected, actual) < ACCURACY
-      , 'Expected: ' + expected +', Actual: ' + actual);
+  assert.strictEqual(convert(302.39).from('TKW').to('Seeds/lb'), 1500)
 };
 
 tests['Seeds/lb to TKW'] = function () {
