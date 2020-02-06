@@ -304,7 +304,7 @@ tests['all possibilities'] = function () {
       , 'yd3/s'
       , 'year'
       , 'TKW'
-      , 'Seeds/lb'
+      , 'seeds/lb'
   ];
   try {
     assert.deepEqual(actual.sort(), expected.sort())
